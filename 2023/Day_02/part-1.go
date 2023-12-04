@@ -35,7 +35,7 @@ func main() {
 		line := scanner.Text()
 		fmt.Println(line)
 
-		gameColors := reGameColors.FindAllStringSubmatch(line, -1)
+		gameColors := reGameColors.FindStringSubmatch(line, -1)
 		possible := true
 
 		for _, v := range gameColors {
